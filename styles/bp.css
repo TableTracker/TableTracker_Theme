@@ -1,0 +1,844 @@
+div.activity-comments {
+position: relative;
+margin: 0 0 0 75px;
+width: auto;
+overflow: hidden; /* IE fix */
+}
+
+div.activity-comments > ul {
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+}
+									
+div.activity-comments ul, div.activity-comments ul li {
+border: none;
+list-style: none;
+}
+
+div.activity-comments ul {
+clear: left;
+}
+
+div.activity-comments ul li {
+padding: 10px 15px 10px 0;
+margin-left: 15px;
+}
+
+div.activity-comments ul li p:last-child {
+margin-bottom: 0;
+}
+
+div.activity-comments > ul > li:first-child {
+border-top: none;
+}
+
+div.activity-comments ul li:last-child {
+margin-bottom: 0;
+}
+
+div.activity-comments ul li > ul {
+margin-top: 5px;
+margin-left: 25px;
+}
+
+div.acomment-content .time-since {
+display: none;
+}
+											
+div.acomment-content .activity-delete-link {
+display: none;
+}
+											
+div.acomment-content .comment-header {
+display: none;
+}
+
+div.activity-comments form.ac-form {
+display: none;
+margin: 10px 0 10px 33px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+padding: 8px;
+}
+											
+div.activity-comments li form.ac-form {
+margin-right: 15px;
+}
+
+div.activity-comments form.root {
+margin-left: 0;
+}
+
+div.activity-comments div#message {
+margin-top: 15px;
+margin-bottom: 0;
+}
+
+div.activity-comments form div.ac-reply-avatar {
+float: left;
+}
+
+div.activity-comments form div.ac-reply-content {
+margin-left: 25px;
+padding-left: 15px;
+}
+
+.activity-inner > .activity-inner {
+margin: 0 !important;
+}
+										
+.activity-inner > blockquote {
+margin: 0 !important;
+}
+
+ul.activity-list li {
+padding: 20px 0 0 0;
+overflow: hidden;
+}
+
+ul.activity-list > li:first-child {
+padding-top: 5px;
+}
+
+ul.activity-list li.has-comments {
+padding-bottom: 20px;
+}
+
+.activity-list li.mini {
+position: relative;
+min-height: 35px;
+padding: 12px 0 0 0;
+}
+
+.activity-list li.mini div.activity-meta {
+margin: 0;
+}
+
+.activity-list li.mini div.activity-meta a {
+padding: 3px 8px;
+}
+
+.activity-list li.mini .activity-avatar img.avatar,
+.activity-list li.mini .activity-avatar img.FB_profile_pic {
+width: 50px;
+height: 50px;
+margin-left: 36px;
+}
+										
+.activity-list li.activity_comment .activity-avatar img.avatar,
+.activity-list li.activity_comment .activity-avatar img.FB_profile_pic {
+width: 40px;
+height: 40px;
+margin-left: 20px;
+}
+
+.activity-list li.mini .activity-content {
+margin-right: 175px;
+}
+
+.activity-list li.mini .activity-content p {
+margin: 0;
+float: left;
+}
+
+.activity-list li.mini .activity-meta {
+position: absolute;
+right: 0;
+}
+
+.activity-list .activity-content {
+margin-left: 70px;
+}
+
+.activity-list .activity-header a:first-child, span.highlight {
+padding: 3px 8px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+margin-right: 3px;
+}
+
+.activity-list .activity-content a:first-child:focus {
+outline: none;
+}
+
+.activity-list .activity-content span.activity-header-meta a {
+background: none;
+padding: 0;
+margin: 0;
+border: none;
+}
+
+.activity-list .activity-content .activity-inner,
+.activity-list .activity-content blockquote {
+margin: 15px 0 15px 5px;
+overflow: hidden;
+}
+
+.activity-list .activity-content img.thumbnail {
+float: left;
+margin: 0 10px 5px 0;
+}
+
+.activity-list li.load-more {
+margin: 15px  0 !important;
+padding: 10px 15px !important;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+.activity-list li.mini .activity-comments {
+clear: left;
+margin-top: 30px;
+}
+
+.activity-list li .activity-inreplyto {
+margin-left: 70px;
+margin-bottom: 15px;
+padding-left: 25px;
+}
+
+.activity-list li .activity-inreplyto > p {
+margin: 0;
+display: inline;
+}
+
+.activity-list li .activity-inreplyto blockquote,
+.activity-list li .activity-inreplyto div.activity-inner {
+background: none;
+border: none;
+display: inline;
+padding: 0;
+margin: 0;
+overflow: hidden;
+}
+
+.activity-list div.activity-meta a {
+padding: 4px 8px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+margin-right: 3px;
+}
+
+.activity-list .activity-avatar img {
+width: 50px;
+height: 50px;
+}
+
+div.activity-meta {
+margin: 0 0 20px 3px;
+clear: left;
+}
+
+div.activity-meta a:focus {
+outline: none;
+}
+
+div.admin-links {
+position: absolute;
+top: 15px;
+right: 25px;
+}
+
+body.activity-permalink .activity-list li.mini .activity-meta {
+position: absolute;
+right: 15px;
+}
+
+body.activity-permalink .activity-list .activity-avatar img {
+width: 100px;
+height: 100px;
+}
+
+body.activity-permalink .activity-list li .activity-content {
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+padding: 15px;
+margin-left: 135px;
+min-height: 35px;
+margin-right: 0;
+}
+
+body.activity-permalink .activity-list li .activity-header > p {
+margin-left: -35px;
+padding: 5px 0 0 38px;
+height: 35px;
+margin-bottom: 0;
+}
+
+body.activity-permalink .activity-list li .activity-avatar img.avatar,
+body.activity-permalink .activity-list li .activity-avatar img.FB_profile_pic {
+width: 100px;
+height: 100px;
+margin-left: 0;
+}
+
+body.activity-permalink .activity-content .activity-inner,
+body.activity-permalink .activity-content blockquote {
+margin-top: 5px;
+}
+
+body.activity-permalink div.activity-comments {
+width: auto;
+margin-left: 135px;
+background: none;
+}
+						
+body.activity-permalink div.activity-comments ul li {
+border-width: 1px;
+padding: 15px 0 15px 0;
+}
+											
+body.activity-permalink div.activity-comments ul li > ul {
+margin-top: 15px;
+}
+
+div.activity-comments div.acomment-avatar img {
+border-width: 2px !important;
+float: left;
+margin-right: 10px;
+}
+
+div.activity-comments div.acomment-content {
+margin-left: 39px;
+margin-top: 5px;
+}
+
+div#content .left-menu {
+float: left;
+width: 170px;
+}
+
+div#content .main-column {
+margin-left: 190px;
+}
+
+div.dir-search {
+float: right;
+margin: -32px 10px 0 0;
+}
+
+div#invite-list {
+height: 400px;
+overflow: scroll;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+padding: 5px;
+width: 160px;
+margin: 10px 0;
+}
+
+div#item-header h2 {
+margin: 0 0 15px 0;
+}
+
+div#item-header img.avatar {
+float: left;
+margin: 0 15px 25px 0;
+}
+
+div#item-header h2 {
+margin-bottom: 5px;
+}
+																	
+div#item-header div#item-actions h3 {
+margin: 0 0 5px 0;
+}
+
+div#item-header ul {
+overflow: hidden;
+margin-bottom: 15px;
+}
+
+div#item-header ul h5, div#item-header ul span, div#item-header ul hr {
+display: none;
+}
+
+div#item-header ul li {
+float: right;
+}
+
+div#item-header ul img.avatar, div#item-header ul.avatars img.avatar {
+width: 30px;
+height: 30px;
+margin: 2px;
+}
+
+div#item-header div#item-meta {
+padding-bottom: 10px;
+overflow: hidden;
+margin: 15px 0 5px 0;
+}
+
+div#item-header div#item-actions {
+float: right;
+width: 20%;
+margin: 0 0 15px 15px;
+}
+
+div#item-header div.generic-button, div#item-header a.button {
+float: left;
+margin: 10px 10px 0 0;
+}
+
+.item-body {
+margin: 20px 0;
+}
+
+div#item-header {
+overflow: hidden;
+}
+		
+div#item-header div#item-header-content {
+margin-left: 170px;
+}
+
+body.activity-permalink ul.item-list li {
+padding-top: 0;
+}
+
+ul.item-list {
+width: 100%;
+list-style: none;
+}
+
+.item-list-tabs ul {
+list-style: none;
+}
+		
+ul.item-list li {
+position: relative;
+padding:15px 0 20px;
+}
+
+ul.item-list li div.item-title, ul.item-list li h4 {
+width: 75%;
+margin: 0;
+}
+
+ul.item-list li div.item-desc {
+margin: 10px 0 0 64px;
+width: 50%;
+}
+
+ul.item-list li div.action {
+position: absolute;
+top: 15px;
+right: 0;
+}
+
+ul.item-list li div.meta {
+margin-top: 30px;
+}
+
+div.item-list-tabs {
+clear: left;
+overflow: hidden;
+margin: 15px 0px 15px 0px;
+}
+
+div.item-list-tabs ul {
+width: 100%;
+}
+
+div.item-list-tabs ul li {
+float: left;
+margin: 0px;
+}
+
+div.item-list-tabs#subnav ul li {
+margin-top: 0;
+}
+
+div.item-list-tabs ul li:first-child {
+margin-left: 20px;
+}
+
+div.item-list-tabs ul li.last {
+float: right;
+margin: 7px 20px 0 0;
+}
+
+div.item-list-tabs#subnav ul li.last {
+margin-top: 4px;
+}
+
+div.item-list-tabs ul li.last select {
+max-width: 175px;
+}
+
+div.item-list-tabs ul li a,
+div.item-list-tabs ul li span {
+display: block;
+padding: 5px 10px;
+}
+
+div.item-list-tabs ul li a span {
+display: inline;
+padding: 0;
+}
+
+div.item-list-tabs ul li.selected a,
+div.item-list-tabs ul li.current a {
+}
+
+div.item-list-tabs#object-nav {
+margin-top: 0;
+}
+
+div.item-list-tabs#subnav {
+margin: -15px 0px 15px 0px;
+min-height: 35px;
+overflow: hidden;
+}
+
+div.item-list-tabs ul li.feed a {
+padding-left: 20px;
+background: url( ../../library/styles/daily-images/rss.png ) center left no-repeat;
+}
+
+div.item-list-tabs ul li a span.unread-count {
+padding: 1px 6px;
+}
+
+ul li.loading a {
+padding-right: 30px !important;
+}
+
+.ajax-loader {
+padding: 8px;
+display: none;
+}
+
+a.loading {
+padding-right: 25px !important;
+}
+
+div#message {
+margin: 15px 0;
+}
+
+div#message.updated {
+clear: both;
+}
+
+div#message p {
+padding: 10px 15px;
+display: block;
+}
+
+div#message.error p {
+clear: left;
+}
+
+span.activity, div#message p {
+display: inline-block;
+padding: 1px 8px;
+margin-top: 6px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+
+div#message-thread div.message-box {
+margin: 0;
+padding: 15px;
+}
+
+div#message-thread p#message-recipients {
+margin: 10px 0 20px 0;
+}
+
+div#message-thread img.avatar {
+float: left;
+margin: 0 10px 0 0;
+vertical-align: middle;
+}
+													
+div#message-thread strong span.activity {
+margin: 4px 0 0 10px;
+}
+
+div#message-thread div.message-metadata {
+overflow: hidden;
+}
+
+div#message-thread div.message-content {
+margin-left: 45px;
+}
+
+div#message-thread div.message-options {
+text-align: right;
+}
+
+div#new-topic-post {
+margin: 0;
+padding: 1px 0 0 0;
+}
+
+div#sidebar div.item-options {
+margin: 0px 0px 0 0px;
+padding: 5px 10px;
+}
+
+div#sidebar div.item-meta, div#sidebar div.item-content {
+margin-left: 38px;
+}
+
+div#sidebar div.tags div#tag-text {
+padding-top: 10px;
+}
+
+div#sidebar div#sidebar-me img.avatar {
+float: left;
+margin: 0 10px 15px 0;
+}
+
+div#sidebar div#sidebar-me h4 {
+margin: 0 0 8px 0;
+}
+
+div#sidebar h3.widgettitle, #footer h3.widgettitle {
+margin: 0px;
+padding: 0px;
+clear: left;
+}
+
+div#sidebar ul.item-list img.avatar {
+width: 25px;
+height: 25px;
+margin-right: 10px;
+}
+													
+div#sidebar div.item-avatar img {
+width: 40px;
+height: 40px;
+margin: 1px;
+}
+
+div#sidebar .avatar-block {
+overflow: hidden;
+}
+
+table {
+width: 100%;
+}
+
+table#message-threads {
+margin: 0;
+width: auto;
+}
+
+table.profile-fields {
+margin-bottom: 20px;
+}
+
+div#sidebar table {
+margin: 0;
+width: 117%;
+}
+
+ul.single-line li {
+border: none;
+}
+
+table tr td, table tr th {
+padding: 8px;
+vertical-align: middle;
+}
+
+table tr td.label {
+width: 25%;
+}
+
+table tr td.thread-info p {
+margin: 0;
+}
+
+table tr td.thread-info p.thread-excerpt {
+margin-top: 3px;
+}
+
+table.notification-settings {
+margin-bottom: 20px;
+}
+
+table.notification-settings th.icon, table.notification-settings td:first-child {
+display: none;
+}
+
+table.notification-settings th.title {
+width: 80%;
+}
+
+table.notification-settings .yes, table.notification-settings .no {
+width: 40px;
+}
+
+table.forum {
+margin: 0px 0px 20px 0px;
+width: auto;
+}
+
+table.forum tr.closed td.td-title {
+padding-left: 35px;
+}
+
+table.forum tr > td:first-child, table.forum tr > th:first-child {
+padding-left: 15px;
+}
+
+table.forum tr > td:last-child, table.forum tr > th:last-child {
+padding-right: 15px;
+}
+
+table.forum td img.avatar {
+margin-right: 5px;
+}
+
+table.forum td.td-poster, table.forum td.td-group {
+min-width: 130px;
+}
+
+table.forum th#th-title {
+width: 40%;
+}
+
+table.forum th#th-postcount {
+width: 1%;
+}
+
+div#topic-meta div.admin-links {
+bottom: 0;
+right: 0;
+top: auto;
+}
+
+div#topic-meta {
+position: relative;
+padding: 5px 0;
+}
+
+ul#topic-post-list {
+margin: 15px 0px;
+width: auto;
+}
+													
+ul#topic-post-list li {
+padding: 15px;
+position: relative;
+}
+
+ul#topic-post-list li div.poster-meta {
+margin-bottom: 10px;
+}
+
+ul#topic-post-list li div.post-content {
+margin-left: 54px;
+}
+
+li span.unread-count, tr.unread span.unread-count {
+padding: 2px 8px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+
+form#whats-new-form {
+margin-bottom: 5px;
+overflow: hidden;
+padding-bottom: 10px;
+}
+
+#item-body form#whats-new-form {
+margin-top: 20px;
+border: none;
+}
+
+.home-page form#whats-new-form {
+border-bottom: none;
+padding-bottom: 0;
+}
+
+form#whats-new-form h5 {
+margin: 0;
+margin-left: 76px;
+padding: 0 0 3px 0;
+}
+
+form#whats-new-form #whats-new-avatar {
+float: left;
+}
+
+form#whats-new-form #whats-new-content {
+margin-left: 54px;
+padding-left: 22px;
+}
+
+form#whats-new-form #whats-new-textarea {
+padding: 8px;
+margin-bottom: 10px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+
+form#whats-new-form #whats-new-options select {
+max-width: 200px;
+}
+
+form#whats-new-form #whats-new-submit {
+float: right;
+margin: 0;
+}
+
+#topic-meta h3 {
+margin-bottom: 10px;
+}
+
+.button-nav {
+list-style: none;
+}
+
+div#item-nav ul li.loading a {
+background-position: 88% 50%;
+}
+
+/* > Pagination
+-------------------------------------------------------------- */
+
+div.pagination {
+	padding: 10px 20px 10px 20px;
+	height: 16px;
+}
+	div.pagination#user-pag, .friends div.pagination,
+	.mygroups div.pagination, .myblogs div.pagination, noscript div.pagination {
+		border: none;
+		padding: 8px 15px;
+	}
+
+	div.pagination .pag-count {
+		float: left;
+	}
+
+	div.pagination .pagination-links {
+		float: right;
+	}
+		div.pagination .pagination-links span,
+		div.pagination .pagination-links a {
+			padding: 0 5px;
+		}
+
+div#pag-bottom {
+	margin-top: 0;
+}
+
+.activity-list .activity-content .activity-header img.avatar {
+float:none !important;
+margin:0 5px -15px 5px !important;
+}

@@ -1,0 +1,340 @@
+/*
+ *
+ * Theme Name: Table Tracker
+ * Version: 1.0
+ * Theme URI: http://tabletracker.com
+ * Description: The official TableTracker theme
+ * Author: TableTracker
+ * Tags: buddypress
+ *
+ */
+
+/* NEW WIDGETS (TEMP ADDED BY AXEL VALDEZ ON 28/SEP/2011) */
+
+.widget{
+	background: #d1d1d1;
+	padding: 5px 10px 10px 10px;
+	margin: 10px 0 30px 0;
+	border-radius: 10px;
+	position: relative;
+}
+.widget:before{
+	content: "";
+	background-color: red;
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	top: -5px;
+	left: 0;
+	z-index: -1;
+}
+.widget.red:before{ background: #f00 ;}
+.widget.blue:before{ background: #54BCF1 ;}
+.widget.green:before{ background: #80B74E ;}
+.widget.purple:before{ background: #7A629A ;}
+
+.widget:after{
+	content: "";
+	background-color: #d1d1d1;
+	height: 20px;
+	position: absolute;
+	top: -10px;
+	left: 65px;
+	right: 0;
+	z-index: -1;
+}
+.widget h2{
+	text-transform: uppercase;
+	text-shadow: 1px 2px 1px #9F9F9F;
+	font: normal 13px/13px sans-serif;
+	padding: 5px 0;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+	position: relative;
+}
+.widget h2:before{
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #eee;
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+}
+.clear{ clear: both;}
+
+/* BIG BOX (USER PROFILE) (TEMP ADDED BY AXEL VALDEZ ON 29/SEP/2011) */
+
+.big-box{
+	background: #d1d1d1;
+	padding: 5px 10px 10px 10px;
+	margin: -10px 0 30px 0;
+	border-radius: 10px;
+	position: relative;
+	height: 100%;
+}
+.big-box:before{
+	content: "";
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	top: -5px;
+	left: 0;
+	z-index: -1;
+}
+.big-box.red:before{ background: #f00 ;}
+.big-box.blue:before{ background: #54BCF1 ;}
+.big-box.green:before{ background: #80B74E ;}
+.big-box.purple:before{ background: #7A629A ;}
+
+.big-box:after{
+	content: "";
+	background-color: #d1d1d1;
+	height: 20px;
+	position: absolute;
+	top: -10px;
+	left: 65px;
+	right: 0;
+	z-index: -1;
+}
+.big-box h2{
+	text-shadow: 1px 2px 1px #9F9F9F;
+	font: normal 13px/13px sans-serif;
+	padding: 5px 0;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+/* PROFILE HEADER STYLES */
+.profile-actions .generic-button a{
+    text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+	float: left;
+	cursor: pointer;
+}
+
+#item-header{
+	padding-left: 70px;
+	border-bottom: 1px solid #999;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+#item-header:before{
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #ddd;
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+}
+
+#item-header-avatar{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#item-buttons{
+	float: right;
+	position: relative;
+	z-index: 99999;
+}
+#sendmessage-button{
+
+}
+
+#item-body{
+	position: relative;
+}
+
+a.scrollUp{
+	top: 10px !important;
+}
+a.scrollDown{
+	top: 300px !important;
+}
+
+/* POSTS WIDGET STYLES */
+
+#postsWidget{}
+
+#postsWidget .post{
+	position: relative;
+}
+#postsWidget .post strong{
+	font-weight: bold;
+}
+#postsWidget .post.featured{
+	width: 370px;
+	float: left;
+}
+#postsWidget .post.guide,
+#postsWidget .post.review
+{
+	width: 140px;
+	float: left;
+	margin-left: 20px;
+}
+#postsWidget .post .postheader{
+	height: 75px;
+	margin-left: 65px;
+}
+#postsWidget .post img.image{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 55px;
+	height: 55px;
+}
+#postsWidget .post h3{
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+#postsWidget .post h2{
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+#postsWidget .post .author{
+	font-size: 13px;
+}
+#postsWidget .post .author strong{
+	font-weight: bold;
+}
+#postsWidget .post .author .date{
+	font-style: italic;
+	display: block;
+	
+}
+#postsWidget .post blockquote{
+	height: 65px;
+}
+#postsWidget .post .more{
+	
+}
+#postsWidget .post .more a{
+	color: #3B3B3B;
+}
+
+/* FEED WIDGET STYLES */
+#feedWidget li{
+	position: relative;
+	min-height: 48px;
+	padding: 10px 0 5px 60px;
+	border-bottom: 1px solid #ddd;
+	word-wrap: break-word;
+	width: 130px;
+}
+#feedWidget li:last-child{
+	padding-bottom: 0;
+	border-bottom: none;
+}
+#feedWidget a{
+	color: #000;
+}
+#feedWidget a.name{
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+#feedWidget li a.avatarimg{
+	width: 48px;
+	height: 48px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	text-decoration: none;
+	border: none;
+}
+#feedWidget a.avatarimg img{
+	border: none;
+}
+#feedWidgetInner{
+	overflow: hidden;
+	position: absolute;
+	bottom: 10px;
+	top: 35px;
+	left: 10px;
+	padding-right: 25px;
+}
+#feedwidgetScrollup{
+	position: absolute;
+	top: 49px;
+	right: 10px;
+	color: #333;
+	visibility: hidden;
+}
+#feedwidgetScrolldown{
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	color: #333;
+	visibility: hidden;
+}
+
+#video-emb_wrapper{
+	float: left;
+}
+
+/* RESERVATION WIDGET STYLES */
+
+#datepick{
+	background: #EEEBDC url(images/reservationwidget-cal-bg.png) right center no-repeat;
+}
+
+
+/* last fixes */
+body form#whats-new-form,
+body form#whats-new-form h5{
+	margin-left: 0 !important;
+		width: 100%;
+}
+body form#whats-new-form #whats-new-content{
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+
+
+ul.activity-list li div.activity-comments{
+	margin-left: 0 !important;
+	border-right: none !important;
+}
+
+div.activity-comments > ul{
+	background: transparent !important;
+	border-radius: 0;
+	padding: 5px 0;
+}
+
+div.activity-comments ul li{
+	margin-left: 7px !important;
+}
+
+ul.activity-list li div.activity-comments ul li{
+	padding: 5px 0 5px 26px !important;
+	border-top: 1px solid #DDD !important;
+}
+
+div.activity-comments form.ac-form{
+	padding-left: 34px !important;
+}
+
+body .ac-reply-content input[type="submit"]{
+	font-size: 14px;
+	font-weight: normal;
+	padding: 5px 10px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+	border: none;
+	-moz-text-shadow: none;
+	-webkit-text-shadow: none;
+	text-shadow: none;
+	background: #aacd38;
+	border-bottom: 1px solid #8ca53b;
+	border-right: 1px solid #8ca53b;
+	color: #fff;
+	box-shadow: none !important;
+}
