@@ -20,8 +20,7 @@ clear: left;
 }
 
 div.activity-comments ul li {
-padding: 10px 15px 10px 0;
-margin-left: 15px;
+padding: 10px 0;
 }
 
 div.activity-comments ul li p:last-child {
@@ -37,8 +36,9 @@ margin-bottom: 0;
 }
 
 div.activity-comments ul li > ul {
-margin-top: 5px;
-margin-left: 25px;
+margin-top: 20px;
+border-top: 1px solid #eaeaea;
+margin-left: 40px;
 }
 
 div.acomment-content .time-since {
@@ -63,7 +63,7 @@ padding: 8px;
 }
 											
 div.activity-comments li form.ac-form {
-margin-right: 15px;
+
 }
 
 div.activity-comments form.root {
@@ -71,7 +71,7 @@ margin-left: 0;
 }
 
 div.activity-comments div#message {
-margin-top: 15px;
+
 margin-bottom: 0;
 }
 
@@ -80,8 +80,7 @@ float: left;
 }
 
 div.activity-comments form div.ac-reply-content {
-margin-left: 25px;
-padding-left: 15px;
+
 }
 
 .activity-inner > .activity-inner {
@@ -102,7 +101,7 @@ padding-top: 5px;
 }
 
 ul.activity-list li.has-comments {
-padding-bottom: 20px;
+padding-bottom: 0;
 }
 
 .activity-list li.mini {
@@ -128,9 +127,17 @@ margin-left: 36px;
 										
 .activity-list li.activity_comment .activity-avatar img.avatar,
 .activity-list li.activity_comment .activity-avatar img.FB_profile_pic {
-width: 40px;
-height: 40px;
-margin-left: 20px;
+width: 50px;
+height: 50px;
+margin-left: 0;
+}
+
+li.activity_comment{
+
+}
+
+li.activity_comment .activity-meta{
+	display: none;
 }
 
 .activity-list li.mini .activity-content {
@@ -172,11 +179,11 @@ border: none;
 
 .activity-list .activity-content .activity-inner,
 .activity-list .activity-content blockquote {
-margin: 15px 0 15px 5px;
+margin: 15px 0 15px 0;
 overflow: hidden;
 }
 .activity-list .activity-content .activity-inner {
-color: #3b3b3b;
+color: #111;
 }
 .activity-list .activity-content img.thumbnail {
 float: left;
@@ -199,7 +206,7 @@ margin-top: 30px;
 .activity-list li .activity-inreplyto {
 margin-left: 70px;
 margin-bottom: 15px;
-padding-left: 25px;
+padding-left: 0;
 }
 
 .activity-list li .activity-inreplyto > p {
@@ -217,7 +224,8 @@ margin: 0;
 overflow: hidden;
 }
 
-.activity-list div.activity-meta a {
+.activity-list div.activity-meta a,
+.activity-list div.acomment-options a  {
 padding: 4px 8px;
 -moz-border-radius: 4px;
 -webkit-border-radius: 4px;
@@ -231,7 +239,7 @@ height: 50px;
 }
 
 div.activity-meta {
-margin: 0 0 20px 3px;
+margin: 0 0 20px 0;
 clear: left;
 }
 
@@ -300,14 +308,14 @@ margin-top: 15px;
 }
 
 div.activity-comments div.acomment-avatar img {
-border-width: 2px !important;
 float: left;
 margin-right: 10px;
+width: 30px;
+height: 30px;
 }
 
 div.activity-comments div.acomment-content {
-margin-left: 39px;
-margin-top: 5px;
+margin: 15px 0 15px 40px;
 }
 
 div#content .left-menu {
@@ -414,7 +422,7 @@ list-style: none;
 		
 ul.item-list li {
 position: relative;
-padding:15px 0 20px;
+padding:15px 0 0 0;
 }
 
 ul.item-list li div.item-title, ul.item-list li h4 {
@@ -525,8 +533,8 @@ padding-right: 25px !important;
 div#message {
 margin: 15px 0; 
 position: absolute;
-left: 70px;
-top: -45px;
+right: 0;
+top: -55px;
 }
 
 div#message.updated {
@@ -1153,13 +1161,17 @@ color: #888;
 
 form#whats-new-form textarea {
 color: #555;
+width: 100%;
+height: 50px;
 }
 
 /* > Activity Stream Listing
 -------------------------------------------------------------- */
 .activity-list li .activity-inreplyto {
-color: #888;
-background: url( ../images/replyto_arrow.gif ) 7px 0 no-repeat;
+color: #666;
+background: url( ../images/activity-reply-arr.png ) 0 1px no-repeat;
+padding-left: 12px;
+font-style: italic;
 }
 	
 body.activity-permalink .activity-list li .activity-content {
@@ -1172,7 +1184,7 @@ background: url( ../images/activity_arrow.gif ) top left no-repeat;
 
 .activity-list .activity-content .activity-header,
 .activity-list .activity-content .comment-header {
-color: #888;
+color: #666;
 }
 
 .activity-list .activity-header a:first-child, span.highlight {
@@ -1222,8 +1234,11 @@ background: #059AE7;
 color: #fff;
 }
 
-.activity-list .activity-content span.time-since {
-color: #bbb;
+.activity-list .activity-content span.time-since,
+.activity-list .activity-comments span.time-since  {
+color: #888;
+float: right;
+line-height: 22px;
 }
 
 .activity-list .activity-content span.activity-header-meta a {
@@ -1252,7 +1267,13 @@ color: #555;
 
 /* > Activity Stream Comments
 -------------------------------------------------------------- */
-.activity-list div.activity-meta a {
+
+.acomment-options{
+     margin-left: 40px;
+	line-height: 20px;
+}
+.activity-list div.activity-meta a,
+.activity-list div.acomment-options a  {
 background: #f4f4f4;
 border-bottom: 1px solid #ddd;
 border-right: 1px solid #ddd;
@@ -1260,7 +1281,8 @@ color: #999;
 text-decoration: none;
 }
 	
-.activity-list div.activity-meta a.acomment-reply {
+.activity-list div.activity-meta a.acomment-reply,
+.activity-list div.acomment-options a.acomment-reply {
 background: #DFD1F4;
 border-bottom: 1px solid #BEA1E7;
 border-right: 1px solid #BEA1FA;
@@ -1271,10 +1293,11 @@ div.activity-meta a:focus {
 outline: none;
 }
 	
-div.activity-meta a:hover {
-background: #BEA1FA;
-color: white;
-border-color: #BEA1E7;
+div.activity-meta a:hover,
+div.acomment-options a:hover {
+background: #BEA1FA !important;
+color: white  !important;
+border-color: #BEA1E7  !important;
 }
 		
 div.activity-meta a.acomment-reply:hover {
@@ -1284,15 +1307,21 @@ border-color: #BEA1E7;
 }
 
 div.activity-comments > ul {
-background: #f5f5f5;
+background: transparent;
+border-top: 1px solid #eaeaea;
+border-radius: 0;
 }
 
 div.activity-comments ul li {
-border-top: 2px solid #fff;
+border-bottom: 1px solid #eaeaea;
+}
+
+div.activity-comments ul li:last-child {
+border-bottom: none !important;
 }
 
 div.activity-comments div.acomment-meta {
-color: #888;
+color: #666;
 }
 
 div.activity-comments form.ac-form {
@@ -1767,10 +1796,11 @@ border-color: #73C9F0; }
 .items div { float: left; }
 .items div img { width: 100px; height: 86px; margin: 2px 5px; cursor: pointer; }
 .items div img.selected { border: 2px solid #000; margin: 0px 3px; *margin: 2px 5px; }
-.username { 
+.username,
+h2.fn a { 
 
 font-family: "Damion";
-color: #4E4E50;
+color: #4E4E50 !important;
 font-size: 18px; }
 #youtubeScroll { margin: 15px 0 0; text-align: center; }
 #youtubeScroll img { width: 100px; height: 86px; margin: 2px 5px; cursor: pointer; }
@@ -1977,7 +2007,8 @@ top: 0px;
 div#message p{
 	font-size: 12px;
 }
-.activity-list .activity-header a:first-child {
+.activity-list .activity-header a:first-child,
+.activity-list .acomment-meta a:first-child{
 background: none;
 border-bottom: none;
 border-right: none;
@@ -1986,5 +2017,6 @@ text-decoration: none;
 font-family: "Damion";
 font-size: 15px;
 padding: 0;
+margin-right: 3px;
 }
 

@@ -141,7 +141,7 @@
 						<?php
 							$user = get_userdata( get_current_user_id() );
 							$size = "40";
-							$default = "http://olufn.com/TabLE12TRAcKr/wp-content/themes/tabletracker/images/TT-Favicon_v1.png";
+							$default = "http://206.123.115.106/ttracker/wp-content/themes/tabletracker/images/TT-Favicon_v1.png";
 							
 							
 							$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $user->user_email ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;	
@@ -154,7 +154,7 @@
 						 if ( !is_user_logged_in() ) {
 						?>
 					<div class="userinfo aboveWMark" style="margin-top: 2px;">
-						<a href="<?php echo wp_login_url() ?>" class="frutiger">Guest</a>
+						<a href="javascript:void(0);" onclick="openLoginPopup()" class="frutiger">Guest</a>
 					</div>
 						<?php
 						 }

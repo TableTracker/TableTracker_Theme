@@ -40,9 +40,9 @@
 		<li style="padding-top: 3px;width:92px;">
 			<a href="<?php echo bp_loggedin_user_domain() ?>" style="font-family: damion; color:#B5DE24; font-size: 16px; padding-top: 3px; font-weight: 100;"><?php echo $user->display_name . "\n"; ?></a>
 			<ul>
-				<li><a href="">Achievements</a>
+				<li><a href="<?php echo bp_loggedin_user_domain() ?>achievements">Achievements</a>
 					<ul style="left: 146px;">
-						<li><a href="">My Achievements</a></li>
+						<li><a href="<?php echo bp_loggedin_user_domain() ?>achievements">My Achievements</a></li>
 					</ul>
 				</li>
 				<li><a href="<?php echo bp_loggedin_user_domain() ?>groups">Groups</a>
@@ -94,7 +94,6 @@
 				<li><a href="<?php echo bp_loggedin_user_domain() ?>activity/members">Members</a></li>
 			</ul>
 		</li>
-		
 		<li><a href="<?php echo bp_loggedin_user_domain() ?>friends">Friends</a>
 			<ul>
 				<li><a href="<?php echo bp_loggedin_user_domain() ?>friends/my-friends">My friends</a></li>
@@ -103,10 +102,10 @@
 		</li>
 
 		<?php if( function_exists('my_bp_adminbar_notifications_menu') ) my_bp_adminbar_notifications_menu(); ?>
-
 		<li>
 			<a href="<?php echo get_bloginfo("url"); ?>/wp-admin/">Dashboard</a>
 		</li>
+
 		
 		</ul>
 		

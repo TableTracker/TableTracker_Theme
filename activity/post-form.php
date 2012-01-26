@@ -21,14 +21,14 @@
 
 	<div id="whats-new-content">
 		<div id="whats-new-textarea">
-			<textarea name="whats-new" id="whats-new" cols="50" rows="20"><?php if ( isset( $_GET['r'] ) ) : ?>@<?php echo esc_attr( $_GET['r'] ) ?> <?php endif; ?></textarea>
+			<textarea name="whats-new" id="whats-new" cols="50"><?php if ( isset( $_GET['r'] ) ) : ?>@<?php echo esc_attr( $_GET['r'] ) ?> <?php endif; ?></textarea>
 		</div>
 
 		<div id="whats-new-options">
 			<div id="whats-new-submit">
 				<span class="ajax-loader"></span> &nbsp;
 				<input type="submit" name="aw-whats-new-submit" id="aw-whats-new-submit" value="<?php _e( 'Post Update', 'buddypress' ) ?>" style="
-margin: 0 10px;" />
+margin: 0 10px;" onclick="$('newActivity').fadeOut();" />
 			</div>
 
 			<?php if ( function_exists('bp_has_groups') && !bp_is_my_profile() && !bp_is_group() ) : ?>

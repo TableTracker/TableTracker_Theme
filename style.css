@@ -295,30 +295,16 @@ body form#whats-new-form #whats-new-content{
 }
 
 
-ul.activity-list li div.activity-comments{
-	margin-left: 0 !important;
-	border-right: none !important;
-}
 
-div.activity-comments > ul{
-	background: transparent !important;
-	border-radius: 0;
-	padding: 5px 0;
-}
 
-div.activity-comments ul li{
-	margin-left: 7px !important;
-}
 
-ul.activity-list li div.activity-comments ul li{
-	padding: 5px 0 5px 26px !important;
-	border-top: 1px solid #DDD !important;
+div.activity-comments form.ac-form .ac-reply-avatar{
+	display: none;
 }
-
-div.activity-comments form.ac-form{
-	padding-left: 34px !important;
+div.activity-comments form.ac-form textarea{
+	width: 100%;
+	height: 80px;
 }
-
 body .ac-reply-content input[type="submit"]{
 	font-size: 14px;
 	font-weight: normal;
@@ -334,6 +320,24 @@ body .ac-reply-content input[type="submit"]{
 	text-shadow: none;
 	background: #aacd38;
 	border-bottom: 1px solid #8ca53b;
+	border-right: 1px solid #8ca53b;
+	color: #fff;
+	box-shadow: none !important;
+}
+
+HTML body{
+	padding-top: 0 !important;
+}
+
+table.profile-fields td{
+	padding: 5px;
+}
+
+.profile-actions div:nth-child(1),
+.profile-actions div:nth-child(2),
+.profile-actions div:nth-child(3){
+	display: none;
+}border-bottom: 1px solid #8ca53b;
 	border-right: 1px solid #8ca53b;
 	color: #fff;
 	box-shadow: none !important;

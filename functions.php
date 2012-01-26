@@ -1,6 +1,6 @@
 <?php
 	global $options;
-	$options = get_option('tt_options');
+	$options = get_option('ttracker_options');
 	
 	$templatedir = get_template_directory();
 	
@@ -89,9 +89,11 @@
 	remove_action( 'bp_member_header_actions', 'bp_add_friend_button' );
 	remove_action( 'bp_member_header_actions', 'bp_send_public_message_button' );
 	remove_action( 'bp_member_header_actions', 'bp_send_private_message_button' );
-if ( bp_is_active( 'friends' ) )
-	add_action( 'bp_member_header_actions',    'bp_add_friend_button',20 );
+	if ( bp_is_active( 'friends' ) )
+		add_action( 'bp_member_header_actions',    'bp_add_friend_button',20 );
 
-if ( bp_is_active( 'activity' ) )
-	add_action( 'bp_member_header_actions',    'bp_send_public_message_button',15 );
+	if ( bp_is_active( 'activity' ) )
+		add_action( 'bp_member_header_actions',    'bp_send_public_message_button',15 );
+
 ?>
+

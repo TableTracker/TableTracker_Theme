@@ -40,6 +40,7 @@
 
 			<?php elseif ( bp_is_user_profile() ) : ?>
 				<?php locate_template( array( 'members/single/profile.php' ), true ) ?>
+				
 
 			<?php else : ?>
 				<?php
